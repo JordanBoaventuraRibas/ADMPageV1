@@ -1,49 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <title>Campeonato CS:GO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-grid.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-reboot.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styleGGwin.css">
 </head>
 
-<div class="container-fluid">
-    <header>
-        <div class="row">
-            <div class="col-sm-12 offset-md-5">
-                <h1>CS:GO</h1>
-            </div>
-        </div>
-    </header>
-    <div class="row">
-        <div class="col-xl-2"> Esquerda </div>
-        <div class="col-xl-8">
-            <input class="form-control-custom offset-md-3" type="text" placeholder="Nome do Campeonato">
-            <br>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">R$</span>
-                    <span class="input-group-text">0.00</span>
-                </div>
-                <input type="text" class="form-control" aria-label="Quantia em Dollar (com ponto e duas casas decimais)">
-            </div>
-            
-        </div>
-        <div class="col-xl-2"> Direita </div>
-    </div>
-    <footer>
-        <div class="row">
-            <div class="col-sm-12">Rodapé</div>
-        </div>
-    </footer>
-</div>
-
 <body>
-
+    <div class="container-fluid">
+        <header class="cabecalho">
+            <div class="row">
+                <div class="col-sm-12 offset-md-5">
+                    <img src="imagens/csgo-icon-png-2.png" class="img-fluid logo">
+                </div>
+            </div>
+        </header>
+        <br>
+        <div class="row">
+            <div class="col-xl-2"> Esquerda </div>
+            <div class="col-xl-8">
+                <form>
+                    <div>
+                        <input type="text" class="form-control firts-input" id="formGroupExampleInput" placeholder="Nome Campeonato">
+                    </div>
+                </form>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">R$</span>
+                                <span class="input-group-text">0,00</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Quantia em Dollar (com ponto e duas casas decimais)" placeholder="Valor Inscrição">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Campeonato Free
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button type="button" class="btn btn-outline-secondary">Quantidade de Times</button>
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <span class="sr-only">Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">16</a>
+                                    <a class="dropdown-item" href="#">32</a>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Input dropdown com botão dropdown segmentado">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h4>Premiação</h4>
+            </div>
+            <div class="col-xl-2"> Direita </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-sm-12">Rodapé</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
