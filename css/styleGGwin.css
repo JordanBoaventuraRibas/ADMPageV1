@@ -1,3 +1,6 @@
+body {
+    background-color: rgb(242, 245, 248);
+}
 .cabecalho{
     border-bottom: 1px solid gray;
 }
@@ -7,4 +10,13 @@
 }
 .form-prices {
     width: 49%;
+}
+.date-hour {
+    width: 39%;
+}
+.descricao {
+    width: 208%;
+}
+.botao-cria {
+    margin-top: 4.6rem;
 }
