@@ -23,11 +23,22 @@
         <div class="row">
             <div class="col-xl-2"> Esquerda </div>
             <div class="col-xl-8">
-                <form>
-                    <div>
-                        <input type="text" class="form-control firts-input" id="formGroupExampleInput" placeholder="Nome Campeonato">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome Campeonato">
+                            </div>
+                        </form>
                     </div>
-                </form>
+                    <div class="col-md-6">
+                        <form>
+                            <div>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Empresa Organizadora">
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 <br>
                 <div class="row">
                     <div class="col-md-6">
@@ -36,7 +47,8 @@
                                 <span class="input-group-text">R$</span>
                                 <span class="input-group-text">0,00</span>
                             </div>
-                            <input type="text" class="form-control" aria-label="Quantia em Dollar (com ponto e duas casas decimais)" placeholder="Valor Inscrição">
+                            <input type="text" class="form-control" aria-label="Quantia em Dollar (com ponto e duas casas decimais)"
+                                placeholder="Valor Inscrição">
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -48,22 +60,50 @@
                     <div class="col-md-6">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <button type="button" class="btn btn-outline-secondary">Quantidade de Times</button>
-                                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <span class="sr-only">Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">16</a>
-                                    <a class="dropdown-item" href="#">32</a>
-                                </div>
+                                <label class="input-group-text" for="inputGroupSelect01">Quantidade de Times</label>
                             </div>
-                            <input type="text" class="form-control" aria-label="Input dropdown com botão dropdown segmentado">
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Escolha...</option>
+                                <option value="16">16</option>
+                                <option value="32">32</option>
+                            </select>
                         </div>
                     </div>
                 </div>
                 <br>
                 <h4>Premiação</h4>
+                <div>
+                    <div class="input-group mb-3 form-prices">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">1° Lugar</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3 form-prices">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">2° Lugar</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3 form-prices">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">3° Lugar</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3 form-prices">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">4° Lugar</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3 form-prices">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">5° Lugar</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
             </div>
             <div class="col-xl-2"> Direita </div>
         </div>
